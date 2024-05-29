@@ -36,7 +36,7 @@ const Pagination = () => {
       }
       setPageArr(tempArr);
     }
-  }, [pageLimit, currentPage]);
+  }, [pageLimit, currentPage, pageArr]);
 
   return (
     <div className='flex w-full flex-row justify-center py-3 gap-4 '>
