@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Universal Classes */
+
+@layer base {
+  @font-face {
+    font-family: 'pretendard-black';
+    src: url('../pretendard/Pretendard-Black.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-bold';
+    src: url('../pretendard/Pretendard-Bold.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-extrabold';
+    src: url('../pretendard/Pretendard-ExtraBold.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-extralight';
+    src: url('../pretendard/Pretendard-ExtraLight.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-light';
+    src: url('../pretendard/Pretendard-Light.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-medium';
+    src: url('../pretendard/Pretendard-Medium.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-regular';
+    src: url('../pretendard/Pretendard-Regular.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-semibold';
+    src: url('../pretendard/Pretendard-SemiBold.woff');
+  }
+
+  @font-face {
+    font-family: 'pretendard-thin';
+    src: url('../pretendard/Pretendard-Thin.woff');
+  }
+
+  .font-normal {
+    @apply font-[pretendard-regular];
+  }
+
+  * {
+    @apply m-0 p-0 font-normal outline-none;
+  }
+
+  ul,
+  li,
+  ol {
+    @apply list-none;
+  }
+
+  a {
+    @apply no-underline hover:no-underline;
+  }
+
+  img {
+    @apply align-middle;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white font-normal overflow-x-hidden;
+  }
+}
+
+/*
+* Component based design
+* Will be compiled if used
+*/
+
+@layer components {
+}
+
