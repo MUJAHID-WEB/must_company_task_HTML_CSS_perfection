@@ -159,10 +159,10 @@ function App() {
               필수항목
             </p>
           </div>
-          <div className='py-3 mb-[21px] w-full flex flex-row justify-start items-start '>
+          <div className='py-3 mb-[21px] w-full flex flex-wrap justify-start items-start '>
             <Tabs />
           </div>
-          <div className='w-full flex items-center border border-transparent border-b-[#D7D8DA] justify-between py-3 '>
+          <div className='w-full flex flex-col gap-2 justify-start items-start md:flex-row md:items-center border border-transparent border-b-[#D7D8DA] md:justify-between py-3 '>
             <div className='flex justify-start items-center gap-2'>
               <h2 className='font-semibold text-xl text-[#0B101A] '>
                 신청 목록
@@ -179,7 +179,7 @@ function App() {
                 건)
               </p>
             </div>
-            <div className='flex justify-start items-center gap-1 '>
+            <div className='flex flex-wrap justify-start items-center gap-1 '>
               <SelectBox
                 dataArr={filterOptions}
                 onChangeOptionCb={(e) => {
@@ -201,13 +201,13 @@ function App() {
               />
             </div>
           </div>
-          <div className='w-full flex justify-between py-3 items-center '>
+          <div className='w-full flex flex-col gap-2 justify-end items-end sm:flex-row sm:justify-between py-3 sm:items-center '>
             <Button
               actionCb={() => setInvestmentModalView(true)}
               title='등록'
             />
 
-            <div className='flex gap-1 justify-start items-center'>
+            <div className='flex flex-wrap gap-2 justify-end items-center'>
               <p className='text-[#5A616A] text-sm mr-4 whitespace-nowrap leading-[16px] '>
                 선택한 {selectedData.length}건
               </p>
